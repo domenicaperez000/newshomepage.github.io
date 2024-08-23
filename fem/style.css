@@ -1,0 +1,98 @@
+:root {
+    --clr-soft-red: hsl(5, 85%, 63%);
+    --clr-soft-orange: hsl(35, 77%, 62%);
+    --clr-off-white: hsl(36, 100%, 99%);
+    --clr-grayish-blue: hsl(233, 8%, 79%);
+    --clr-dark-grayish-blue: hsl(236, 13%, 42%);
+    --clr-very-dark-blue: hsl(240, 100%, 5%);
+
+    --fs--p: 0.9375em;
+    --fw--skinny: 400;
+    --fw--reg: 700;
+    --fw--bold: 800;
+
+}
+
+a {
+    text-decoration: none;;
+}
+body, a {
+    font-family: "Inter";
+    color: var(--clr-very-dark-blue);
+}
+ 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4 {
+  line-height: 1.1;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+p {
+    font-size: var(--fs--p);
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90rem;
+    margin: 4rem auto;
+    margin-top: 5rem;
+}
+ul {
+    display: flex;
+    font-size: var(--fs--p);
+}
+ul>*:not(:last-child) {
+    padding-right: 3rem;
+}
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hero {
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+   max-width: 65rem;
+    background-color: olive;
+}
+.hero img {
+    margin: 0 auto;
+    max-width: 65rem;
+}
+.aside {
+    margin-right: auto;
+    max-width: 25rem;
+}
+.container {
+    display: flex;
+}
+.title {
+    font-size: 4.3em;
+    font-weight: var(--fw--bold);
+    max-width: 35rem;
+}
